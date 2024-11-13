@@ -1,0 +1,8 @@
+<!-- if condtion to enable github user name and action buttons only on home page -->
+@if (enableHome()) {
+    <h2>Visionmedia</h2>
+    <p class="user-description">Github user <b>visionmedia</b> list of repositories information</p> 
+    <button type="button" routerLink="/user-repo-details">View User Repositories</button>
+    <button type="button" routerLink="/repositories-stars-chart" class="repo-stars-button">View Names Vs Stars Chart</button>
+}
+<router-outlet></router-outlet>
